@@ -21,3 +21,21 @@ body {
 .my-5 {
   margin-top: 3rem !important;
 }
+
+
+.pb-5,
+.py-5 {
+  padding-bottom: 1.5rem !important;
+}
+.pt-5,
+.py-5 {
+  padding-top: 1.5rem !important;
+}
+
+
+iframe {
+  width: 100%;
+  height: 100vh;
+  border: none; 
+  overflow: hidden;
+}
