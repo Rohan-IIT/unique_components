@@ -1,62 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="../stylesheet/style.css" />
-
-    <style>
-      #invertedcursor {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        background: #fff;
-        border-radius: 50%;
-        top: var(--y, 0);
-        left: var(--x, 0);
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        mix-blend-mode: difference;
-        transition: transform 0.2s;
-        pointer-events: none;
-        z-index: 9999;
-      }
-    </style>
+    <link rel="stylesheet" href="../stylesheet/invertedcolor.css" />
   </head>
   <body style="cursor: none !important">
     <div id="invertedcursor"></div>
 
-    <p class="py-5" style="background-color: black; color: white; font-size: 27px;"> 
-      This Cursor is Inverted! <br>
-         Scroll down to see how the cursor interacts with different background and
+    <p
+      class="py-5"
+      style="background-color: black; color: white; font-size: 27px"
+    >
+      This Cursor is Inverted! <br />
+      Scroll down to see how the cursor interacts with different background and
       text colors.
-     
     </p>
 
-
-    <p  class="py-5" style="background-color: red; color: white">
+    <p class="py-5" style="background-color: red; color: white">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat
       elementum risus vitae volutpat. Donec luctus tellus ut ligula tempus
       semper. Pellentesque ac semper mauris, quis varius purus. Quisque sit amet
       imperdiet lorem, eget vulputate ante. Suspendisse potenti. Fusce a magna
       ultrices, aliquet ligula a, pellentesque est. Phasellus non luctus magna.
     </p>
-    <p  class="py-5" style="background-color: lightblue; color: black">
+    <p class="py-5" style="background-color: lightblue; color: black">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat
       elementum risus vitae volutpat. Donec luctus tellus ut ligula tempus
       semper. Pellentesque ac semper mauris, quis varius purus. Quisque sit amet
       imperdiet lorem, eget vulputate ante. Suspendisse potenti. Fusce a magna
       ultrices, aliquet ligula a, pellentesque est. Phasellus non luctus magna.
     </p>
-    <p  class="py-5" style="background-color: purple; color: white">
+    <p class="py-5" style="background-color: purple; color: white">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat
       elementum risus vitae volutpat. Donec luctus tellus ut ligula tempus
       semper. Pellentesque ac semper mauris, quis varius purus. Quisque sit amet
       imperdiet lorem, eget vulputate ante. Suspendisse potenti. Fusce a magna
       ultrices, aliquet ligula a, pellentesque est. Phasellus non luctus magna.
     </p>
-    <p  class="py-5" style="background-color: orange; color: black">
+    <p class="py-5" style="background-color: orange; color: black">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat
       elementum risus vitae volutpat. Donec luctus tellus ut ligula tempus
       semper. Pellentesque ac semper mauris, quis varius purus. Quisque sit amet
@@ -64,17 +45,6 @@
       ultrices, aliquet ligula a, pellentesque est. Phasellus non luctus magna.
     </p>
 
-    <script>
-      document.body.onmousemove = function (e) {
-        document.documentElement.style.setProperty(
-          "--x",
-          e.clientX + window.scrollX + "px"
-        );
-        document.documentElement.style.setProperty(
-          "--y",
-          e.clientY + window.scrollY + "px"
-        );
-      };
-    </script>
+    <script src="/javascript/invertedcolor.js"></script>
   </body>
 </html>
