@@ -16,39 +16,77 @@
       <div class="tab" onclick="showTab('tab2')">CSS</div>
       <div class="tab" onclick="showTab('tab3')">Javascript</div>
     </div>
-    <div class="container my-5">
+    <div class="container my-5 mb-5">
       <div class="tab-content" id="tab1">
-        <div class="shadow-box">
-          <h1>
+        <div class="my-5">
+          <p>Example of ABBR tag</p>
+          <h4>
             <span>hover on me -></span>
-            <abbr title="Three letter acronym">TLA</abbr>
-            <br />
-            <bdo dir="rtl">Reverse order</bdo><br />
-          </h1>
+            <abbr title="World Health Organization">WHO</abbr> is a specialized
+            agency of the United Nations.
+          </h4>
+          <hr />
+          <p>Example of BDO tag</p>
+          <h4><bdo dir="rtl">Reverse order</bdo></h4>
+          <hr />
+          <p>Example of DETAILS and SUMMARY tag</p>
+          <h4>
+            <details>
+              <summary>Click here to see details</summary>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur recusandae iure explicabo atque voluptates voluptas
+              maiores soluta quibusdam, est ut aliquam error minima at alias
+              accusamus eaque saepe consequuntur distinctio.
+            </details>
+          </h4>
         </div>
-        <h1>
-          <details>
-            <summary>Click here to see details</summary>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur recusandae iure explicabo atque voluptates voluptas maiores soluta quibusdam, est ut aliquam error minima at alias accusamus eaque saepe consequuntur distinctio.
-          </details>
-        </h1>
-
-        <iframe src="./pages/theme.html"></iframe>
+        <hr />
+        <div>
+          <p>This is a simple example of theme switching.</p>
+          <iframe class="iframe1" src="./pages/theme.html"></iframe>
+        </div>
       </div>
 
       <div class="tab-content" id="tab2">
-        <iframe src="./pages/tootltip.html"></iframe>
-        <iframe src="./pages/cannottouchme.html"></iframe>
-        <iframe src="./pages/3dflip.html"></iframe>
+
+        <p>
+          This is a simple example of on hover showing caption by using CSS.
+        </p>
+        <iframe class="iframe3" src="./pages/tootltip.html"></iframe>
+        <hr />
+        <p>
+          This is an example of element running away from cursor, cursor position calculated using JS.
+        </p>
+        <iframe class="iframe2" src="./pages/cannottouchme.html"></iframe>
+        <hr />
+        <p>
+          This is an example of on hover flip feels like 3D object flipping achieved using CSS.
+        </p>
+        <iframe class="iframe3" src="./pages/3dflip.html"></iframe>
       </div>
       <div class="tab-content" id="tab3">
-        <iframe src="./pages/ocatal.html"></iframe>
+     
+        <p>
+          This is an example of Ocatal numeral system, here we adding zero to prefix to perform calculation.
+        </p>
 
-        <iframe src="./pages/cursor.html"></iframe>
+        <iframe class="iframe3" src="./pages/ocatal.html"></iframe>
+        <hr />
+        <p>
+          This is an example of inverted cursor.
+        </p>
 
-        <iframe src="./pages/drag.html"></iframe>
-        <h1>Click on me 10 Times</h1>
-        <iframe src="./pages/break.html"></iframe>
+        <iframe class="iframe1" src="./pages/cursor.html"></iframe>
+
+        <hr />
+        <p>
+         Here you can drag element from one stack to another.
+        </p>
+
+        <iframe class="iframe4" src="./pages/drag.html"></iframe>
+        <hr>
+        <p>Click on thumb's up icon 12 Times, it will break in pieces</p>
+        <iframe class="iframe1" src="./pages/break.html"></iframe>
       </div>
     </div>
     <script src="./javascript/script.js"></script>
