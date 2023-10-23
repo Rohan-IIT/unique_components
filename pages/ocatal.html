@@ -1,48 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise Octal Subtraction</title>
-
-    <style>
-        #custom-console {
-            width: 100%;
-            height: 200px;
-            background-color: black;
-            color: white;
-            overflow: scroll;
-            font-family: monospace;
-        }
-
-        .shadow-box {
-            -webkit-box-shadow: 2px 1px 20px -3px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 2px 1px 20px -3px rgba(0, 0, 0, 0.75);
-            box-shadow: 2px 1px 20px -3px rgba(0, 0, 0, 0.75);
-            border-radius: 1.25rem;
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="/stylesheet/octal.css" />
+  </head>
+  <body>
     <div>
-        <label for="numberInput">Enter a number:</label>
-        <input type="number" id="numberInput" min="0">
+      <label for="numberInput">Enter a number:</label>
+      <input type="number" id="numberInput" min="0" />
     </div>
     <button onclick="performSurpriseSubtraction()">Subtract 8</button>
     <div id="custom-console"></div>
 
-    <script>
-        function performSurpriseSubtraction() {
-            const inputElement = document.getElementById("numberInput");
-            const userInput = inputElement.value;
-            const octalNumber = "0" + userInput;
-            const result = octalNumber - 6;
-
-            const consoleElement = document.getElementById("custom-console");
-            const logMessage = document.createElement("p");
-            logMessage.textContent = `You performed a subtraction with input: ${userInput}. In the background, we added a leading zero to make it an octal number and then subtracted 8 from it. Result: ${result}`;
-            consoleElement.appendChild(logMessage);
-        }
-    </script>
-</body>
+    <script src="/javascript/octal.js"></script>
+  </body>
 </html>
