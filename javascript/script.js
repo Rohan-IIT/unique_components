@@ -21,11 +21,12 @@ function showTab(tabId) {
         if (activeTab) {
             activeTab.classList.remove("active");
         }
-        var clickedTab = document.querySelector(
-            ".tab[onclick=\"showTab('" + tabId + "')\"]"
-        );
+        var clickedTab = document.querySelector(".tab[onclick=\"showTab('" + tabId + "')\"]");
         if (clickedTab) {
             clickedTab.classList.add("active");
         }
     }
 }
+
+// Set tab1 as initially active
+document.getElementById("tab1").classList.add("active");
