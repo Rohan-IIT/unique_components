@@ -28,5 +28,6 @@ function showTab(tabId) {
     }
 }
 
+let classtoadd = ['active']
 // Set tab1 as initially active
-document.getElementById("tab1").classList.add("active");
+document.getElementById("tab1").classList.add(...classtoadd);
